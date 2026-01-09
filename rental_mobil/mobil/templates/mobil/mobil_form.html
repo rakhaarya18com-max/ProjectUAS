@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tambah Data Sewa Mobil</title>
+</head>
+<body>
+    <h1>Tambah Data Sewa Mobil</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Simpan</button>
+    </form>
+    
+    <br>
+    <a href="{% url 'mobil_list' %}">Kembali</a>
+
+    <p>Modul Praktikum Algoritma dan Pemrograman</p>
+</body>
+</html>
